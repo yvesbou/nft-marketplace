@@ -23,7 +23,8 @@ const Home: NextPage = () => {
         <Navbar></Navbar>
         <Searchbar></Searchbar>
         <CTA>
-          <h1>Go <span>Stealth Mode</span> with your <span>NFT</span> buys</h1>
+          <CTATitle>Go <StealthSpan>Stealth Mode</StealthSpan> with your <span>NFT</span> buys</CTATitle>
+          <CTASubTitle>Make offers to NFT Holders without revealing identity</CTASubTitle>
         </CTA>
         <Hero></Hero>
 
@@ -42,8 +43,27 @@ const Home: NextPage = () => {
 
 const CTA = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+`
+
+const CTATitle = styled.h1`
+  font-size: 50px;
+  margin-bottom: 16px;
+`
+const CTASubTitle = styled.h2`
+  margin-top: 0px;
+  font-size: 30px;
+`
+
+const StealthSpan = styled.span`
+  background-image: linear-gradient(124deg, #f7f5f5, #d4d4d4, #b3b3b2, #8a8a89, #696a6a, #565656, #3f3e3f, #7e7d7e, #cdccce);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 `
 
 export default Home;
