@@ -8,7 +8,7 @@ const Searchbar: FC = () => {
           <InnerSearchCard>
             Search the most wanted NFTs 🚀
             <Container>
-              <IconBox></IconBox>
+              <IconBox><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" className="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></IconBox>
               <SearchInputContainer></SearchInputContainer>
             </Container>
           </InnerSearchCard>
@@ -24,6 +24,41 @@ const SearchCard = styled.div`
   padding: 1px;
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+
+  :focus {
+    outline: none;
+    color: #FFF;
+    background-color: lighten(#e3edf7, 3%);
+  }
+
 `
 
 const InnerSearchCard = styled.div`
