@@ -6,7 +6,7 @@ const Searchbar: FC = () => {
     return (
         <SearchCard>
           <InnerSearchCard>
-            Search for the most wanted NFTs 🚀
+            Search the most wanted NFTs 🚀
             <Container>
               <IconBox></IconBox>
               <SearchInputContainer></SearchInputContainer>
