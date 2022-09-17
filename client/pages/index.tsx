@@ -30,17 +30,12 @@ const Home: NextPage = () => {
 
       <footer className={styles.footer}>
         <a href="https://rainbow.me" target="_blank" rel="noopener noreferrer">
-          Made with ❤️ by your frens at ETH3 Berlin
+          Made with ❤️ by your Zick Coders at ETH3 Berlin
         </a>
       </footer>
     </div>
   );
 };
 
-const SearchbarDescription = styled.div`
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-`
 
 export default Home;

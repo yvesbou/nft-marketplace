@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC, useEffect, useState } from "react"
 import styled from "styled-components";
 import styles from '../styles/Home.module.css';
@@ -7,10 +8,12 @@ const Hero: FC = () => {
 	
     return (
         <div className={styles.grid}>
-          <a href="https://rainbowkit.com" className={styles.card}>
-            <h2>RainbowKit Documentation &rarr;</h2>
-            <p>Learn how to customize your wallet connection flow.</p>
-          </a>
+            <Link href="../NFT" >
+                <div className={styles.card}>
+                    <h2>RainbowKit Documentation &rarr;</h2>
+                    <p>Learn how to customize your wallet connection flow.</p>
+                </div>
+            </Link>
 
           <a href="https://wagmi.sh" className={styles.card}>
             <h2>wagmi Documentation &rarr;</h2>

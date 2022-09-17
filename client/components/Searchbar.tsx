@@ -25,12 +25,13 @@ const SearchCard = styled.div`
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  opacity: 0.85;
   background-size: 1800% 1800%;
 
   -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
+  -z-animation: rainbow 30s ease infinite;
+  -o-animation: rainbow 30s ease infinite;
+    animation: rainbow 30s ease infinite;}
 
   @-webkit-keyframes rainbow {
       0%{background-position:0% 82%}
@@ -53,7 +54,7 @@ const SearchCard = styled.div`
       100%{background-position:0% 82%}
   }
 
-  :focus {
+  &:focus {
     outline: none;
     color: #FFF;
     background-color: lighten(#e3edf7, 3%);
@@ -112,7 +113,7 @@ const SearchInputContainer = styled.input`
   &:focus {
     outline: none;
     color: #000;
-    background-color: lighten(#e3edf7, 3%);
+    background-color: lighten(#e3edf7, 50%);
   }
 
 `

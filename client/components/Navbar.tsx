@@ -31,6 +31,7 @@ const Container = styled.div`
 	align-items: flex-end;
 	justify-content: space-between;
 	padding: 1rem;
+    margin-bottom: 16px
 `
 
 const SubContainer = styled.div`
