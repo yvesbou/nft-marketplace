@@ -15,6 +15,13 @@ const NFT: NextPage = () => {
                     <ImageContainer></ImageContainer>
                     <InputAndButtons>
                         <Title><h1>Make Offer to Owner</h1></Title>
+                        <Subcontainer>
+                                <DropdownMenu>Dai</DropdownMenu>
+                                <OfferInputField></OfferInputField>
+                        </Subcontainer>
+                            <Subcontainer>
+                                <OfferButton>Make Offer</OfferButton>
+                            </Subcontainer>
                     </InputAndButtons>
                 </TopContainer>
                 <BottomContainer>
@@ -60,11 +67,11 @@ const ImageContainer = styled.div`
 
 const InputAndButtons = styled.div`
     display: flex;
+    flex-direction: column;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
     background-color: #F8F8F8;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     width: 70%;
 `
 
@@ -74,12 +81,25 @@ const Title = styled.div`
     margin-top: 8px;
 `
 
-const DropdownAndInput = styled.div`
-
+const Subcontainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    margin-left: 64px;
+    margin-top: 16px;
 `
 
-const Button = styled.div`
+const DropdownMenu = styled.select`
+    margin-right: 16px;
+`
 
+const OfferInputField = styled.input`
+    margin-right: 16px;
+    width: 200px;
+`
+
+const OfferButton = styled.button`
+    max-width: 100px;
 `
 
 const Metadata = styled.div`

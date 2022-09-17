@@ -22,6 +22,9 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Navbar></Navbar>
         <Searchbar></Searchbar>
+        <CTA>
+          <h1>Go <span>Stealth Mode</span> with your <span>NFT</span> buys</h1>
+        </CTA>
         <Hero></Hero>
 
 
@@ -37,5 +40,10 @@ const Home: NextPage = () => {
   );
 };
 
+const CTA = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
 
 export default Home;
