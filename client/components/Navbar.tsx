@@ -39,26 +39,11 @@ const SubContainer = styled.div`
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-between;
-	`
+`
 
 const TitleNavbar = styled.div`
 	font-size: 30px;
     font-weight: 900;
-`
-
-const OnlyOwnerButton = styled.button`
-	padding: 10px;
-	border-radius: 12px;
-	border: transparent;
-	background-color: #F8F8F8;
-	letter-spacing: 0.1px;
-	box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-	font-weight: 900;
-	transition-duration: 0.3s;
-	&:hover {
-        transition: 0.3s ease-out;
-        transform: scale(1.05) perspective(1px)
-    }
 `
 
 

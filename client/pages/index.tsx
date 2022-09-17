@@ -2,6 +2,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
+import Searchbar from '../components/Searchbar';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
 
@@ -20,12 +21,10 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Navbar></Navbar>
 
-        <SearchbarDescription>
-          Search for the NFT which gives you exclusivity 
-        </SearchbarDescription>
-        <h1 className={styles.title}>
-          Here will be the Search Bar
-        </h1>
+        {/* <SearchbarDescription>
+          Search here to make private offers to NFTs
+        </SearchbarDescription> */}
+        <Searchbar></Searchbar>
 
 
         <div className={styles.grid}>
