@@ -13,11 +13,13 @@ const NFT: NextPage = () => {
                 <Container>
                 <TopContainer>
                     <ImageContainer></ImageContainer>
-                    <PriceAndButtons></PriceAndButtons>
+                    <InputAndButtons>
+                        <Title><h1>Make Offer to Owner</h1></Title>
+                    </InputAndButtons>
                 </TopContainer>
                 <BottomContainer>
-                    <Metadata>Metadata</Metadata>
-                    <Description>Description</Description>
+                    <Metadata><Title><h1>Metadata</h1></Title></Metadata>
+                    <Description><Title><h1>Description</h1></Title></Description>
                 </BottomContainer>
                 </Container>
             </main>
@@ -50,29 +52,48 @@ const BottomContainer = styled.div`
 
 const ImageContainer = styled.div`
     border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-    background-color: orange;
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    background-color: #F8F8F8;
     width: 300px;
     height: 400px;
 `
 
-const PriceAndButtons = styled.div`
+const InputAndButtons = styled.div`
     display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    background-color: #F8F8F8;
     flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+`
+
+const Title = styled.div`
+    margin-bottom: 8px;
+    margin-left: 32px;
+    margin-top: 8px;
+`
+
+const DropdownAndInput = styled.div`
+
+`
+
+const Button = styled.div`
+
 `
 
 const Metadata = styled.div`
     border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-    background-color: orange;
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    background-color: #F8F8F8;
     width: 300px;
     height: 300px;
 `
-
+    
 const Description = styled.div`
     border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-    background-color: orange;
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    background-color: #F8F8F8;
     width: 800px;
     height: 300px;
 `
