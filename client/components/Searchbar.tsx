@@ -21,15 +21,9 @@ const SearchCard = styled.div`
   margin-bottom: 16px;
   display: flex;
 	flex-direction: row;
-  // background-color: red;
-  // justify-content: center;
   padding: 1px;
-  // border-radius: var(--border-radius);
-  // background: linear-gradient(-67deg, rgba(#c8d8e7, .7), rgba(255,255,255,.8));
-  // overflow: hidden;
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-  // width: 380px;
 `
 
 const InnerSearchCard = styled.div`
@@ -37,7 +31,6 @@ const InnerSearchCard = styled.div`
   font-weight: 600;
   border-radius: 15px;
   padding: 16px;
-  // background-color: #e2e9f4;
   width: 100%
 `
 
@@ -72,7 +65,6 @@ const SearchInputContainer = styled.input`
   display: block;
   font-family: 'Orbitron', sans-serif;
   font-weight: 600;
-  // color: #a9b8c9;
   -webkit-appearance: none;
   transition: all 240ms ease-out;
   width: 100%;
