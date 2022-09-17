@@ -34,6 +34,33 @@ const NFT: NextPage = () => {
     );
 }
 
+const SearchInputContainer = styled.input`
+  background-color: #e3edf7;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  padding: 16px 32px;
+  border-radius: 16px;
+  
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  -webkit-appearance: none;
+  transition: all 240ms ease-out;
+  width: 100%;
+  -webkit-box-shadow:inset 0 0 3px #111;
+  -moz-box-shadow:inset 0 0 3px #111;
+  box-shadow:inset 0 0 3px #111;
+  border: none;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+    color: #000;
+    background-color: lighten(#e3edf7, 50%);
+  }
+
+`
+
 const Container = styled.div`
     margin: 8px;
     display: flex;
@@ -90,12 +117,44 @@ const Subcontainer = styled.div`
 `
 
 const DropdownMenu = styled.select`
-    margin-right: 16px;
+    margin-right: 32px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #F8F8F8;
+    &:focus {
+        outline: none;
+        color: #000;
+        background-color: lighten(#e3edf7, 50%);
+      }
 `
 
 const OfferInputField = styled.input`
+    background-color: #e3edf7;
     margin-right: 16px;
     width: 200px;
+    padding: 16px 32px;
+    border-radius: 16px;
+    
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    -webkit-appearance: none;
+    transition: all 240ms ease-out;
+    -webkit-box-shadow:inset 0 0 3px #111;
+    -moz-box-shadow:inset 0 0 3px #111;
+    box-shadow:inset 0 0 3px #111;
+    border: none;
+    background: transparent;
+
+    &:focus {
+        outline: none;
+        color: #000;
+        background-color: lighten(#e3edf7, 50%);
+    }
+    
 `
 
 const OfferButton = styled.button`
