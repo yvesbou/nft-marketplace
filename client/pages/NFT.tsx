@@ -11,6 +11,7 @@ const NFT: NextPage = () => {
     
     const [selectedIconIndex, setSelectedIconIndex] = useState(0);
 
+    // DAI="DAI" is possible since sept 2021
     enum CoinNames {
         DAI="DAI",
         USDC="USDC",
@@ -87,7 +88,7 @@ const NFT: NextPage = () => {
                                     <option value="USDC"> USDC</option>
                                     <option value="ETHER"> Ether</option>                        
                                 </DropdownMenu>
-                                <OfferInputField></OfferInputField>
+                                <OfferInputField type="number"></OfferInputField>
                         </Subcontainer>
                             <Subcontainer>
                                 <OfferButton>Make Offer</OfferButton>

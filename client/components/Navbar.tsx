@@ -16,7 +16,9 @@ const Navbar: FC = () => {
 
     return (
 		<Container>
-			<TitleNavbar>🕵️‍♀️ NFT Marketplace 🕵️‍♂️</TitleNavbar>
+            <Link href="/">
+                <TitleNavbar>🕵️‍♀️ NFT Marketplace 🕵️‍♂️</TitleNavbar>
+            </Link>
 			<SubContainer>
 				<ConnectButton />
 			</SubContainer>
